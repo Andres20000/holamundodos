@@ -21,7 +21,8 @@ class ViewController: UIViewController {
     }
 
     @IBAction func didTapBotonUno(_ sender: Any) {
-        print("boton")
+        print("boton rama 1")
+        
         
         
     }
