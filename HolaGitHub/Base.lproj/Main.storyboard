@@ -67,7 +67,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" id="dhO-UA-qxi"/>
+                                    <action selector="goBack:" destination="VGZ-W1-WsK" eventType="touchUpInside" id="ZrW-Nm-z91"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lep-OM-bj3">
@@ -76,6 +76,9 @@
                                 <state key="normal" title="Change Label">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="changeValue:" destination="VGZ-W1-WsK" eventType="touchUpInside" id="FVi-1t-awt"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="76Y-iy-Vce">
                                 <rect key="frame" x="130" y="253" width="152" height="21"/>
@@ -88,7 +91,7 @@
                         <color key="backgroundColor" red="0.050980392159999999" green="0.43921568630000002" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
-                        <outlet property="Volver" destination="VhQ-Wg-4VM" id="apQ-nF-das"/>
+                        <outlet property="lblName" destination="76Y-iy-Vce" id="uLS-ia-Btj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FH7-hI-un8" userLabel="First Responder" sceneMemberID="firstResponder"/>

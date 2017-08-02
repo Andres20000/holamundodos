@@ -10,12 +10,25 @@ import UIKit
 
 class VistaJoseViewController: UIViewController {
 
+    @IBOutlet var lblName: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func goBack(_ sender: Any)
+    {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func changeValue(_ sender: Any)
+    {
+        lblName.text = "Rojo"
+        lblName.textColor = UIColor.red
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
